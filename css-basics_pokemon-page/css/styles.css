@@ -38,6 +38,10 @@ h1, h2 {
 
 .title {
   /* your solution */
+  background-color: white;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
 }
 
 /* ------- Sections ------- */
