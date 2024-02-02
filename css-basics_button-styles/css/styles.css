@@ -51,6 +51,10 @@ font-family: 'Times New Roman'
 
 .button4 {
   /*Style me! Can you add a shadow to this button? Maybe play around with the shadow properties, as well? You can even color the shadow, make it bigger or smaller, ... */
+box-shadow: 0px 0px 8px rgbg(0, 0, 0, 0.3);
+border-radius: 20px;
+font-size: 18px;
+font-style: arial;
 }
 
 /* Feel free to play around with other properties, as well. */
