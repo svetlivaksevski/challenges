@@ -62,6 +62,10 @@ section {
   border-left: 5px solid orange; 
 }
 
+.favourites {
+  border-color: gold;
+}
+
 /* ------- Headings Part 2 ------- */
 
 /* Task 6: The headings of our sections somehow look boring. Therefore, we want to change this:
@@ -74,6 +78,11 @@ section {
 
 .subtitle {
   /* your solution */
+  padding: 10px;
+  border-left: 3px solid gold;
+  border-right: 3px solid gold;
+  display: inline;
+
 }
 
 /* ------- List ------- */
@@ -83,12 +92,12 @@ section {
 /* add selector */
  {
   list-style: "🧡";
-  padding-left: /* add value */ ;
+  padding-left: 30px; /* add value */ 
 }
 
 /* add selector */
  {
-  padding-left: /* add value */ ;
+  padding-left: 5px; /* add value */ 
 }
 
 /* ------- The End -------- */
