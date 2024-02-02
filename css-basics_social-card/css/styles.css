@@ -14,8 +14,8 @@ body {
 }
 
 .content {
-  width: 50%;
-  height: auto;
+  width: 95%;
+  height: 50%;
   border-radius: 15;
   border-radius: 20px;
   padding: 15px;
@@ -25,9 +25,9 @@ body {
 }
 
 img {
-  width: 40%;
-  height: 40%;
-  border-radius: 30px;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
   padding: 5px;
   margin-bottom: 5px;
 
