@@ -3,13 +3,15 @@
   border-radius: 100px;
   font-family: Arial;
   margin: 3px;
-  padding: 3px;
+  padding: 3px;  
+
 
 }
 
 body {
   background-color: #f5f5f5;
   margin: 3px;
+
 }
 
 .content {
@@ -29,6 +31,7 @@ img {
   border-radius: 20px;
   padding: 5px;
   margin-bottom: 5px;
+
 
 }
 
