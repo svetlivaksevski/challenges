@@ -63,6 +63,10 @@ body {
   padding: 3% 10%;
   scroll-margin-top: 100px;
   border-radius: 2rem;
+  position: relative;
+  left: 0;
+  right: 0;
+  
 }
 
 .card__heading {
