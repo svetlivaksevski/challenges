@@ -19,13 +19,13 @@ h1 {
   color: var(--color-white);
   line-height: 1.4;
   margin: 0;
-  letter-spacing: 0.025em;
+  letter-spacing: var(--spacing);
   text-transform: uppercase;
   padding-block: 16px;
 }
 
 h2 {
-  letter-spacing: 0.025em;
+  letter-spacing: var(--spacing);
 }
 
 strong {
@@ -90,7 +90,7 @@ mark {
   background-color: var(--color-primary);
   color: var(--color-white);
   border-radius: var(--border-radius-small);
-  letter-spacing: 0.025em;
+  letter-spacing: var(--spacing);
 }
 
 ::selection {
@@ -104,5 +104,6 @@ mark {
   --color-primary: #8236ff;
   --color-white: #ffffff;
   --border-radius-small: 4px; 
+  --spacing: 0.025em;
 
 }
