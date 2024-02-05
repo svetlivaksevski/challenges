@@ -1,12 +1,12 @@
-# HTML and the web: `div`-salad
+# layout-with-position
 
 ## Task
 
-- Open the `./index.html` file and follow the instructions given there.
+- Open the `./css/styles.css` file and follow the instructions given there.
 
 ## Notes
 
-- You only have to touch the `./index.html` file.
+- You only have to touch the `./css/styles.css` file.
 
 ## Development
 
