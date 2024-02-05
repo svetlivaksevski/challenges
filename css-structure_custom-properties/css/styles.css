@@ -76,13 +76,13 @@ a {
   font-size: smaller;
   padding: 8px;
   border-radius: 4px;
-  background-color: hsl(263, 100%, 61%);
+  background-color: var(--color-primary);
   color: #fff;
 }
 
 a:hover,
 a:focus-visible {
-  background-color: rgb(48 48 48);
+  background-color: var(--color-black-light);
   text-decoration: none;
 }
 
