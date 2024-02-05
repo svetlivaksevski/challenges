@@ -82,7 +82,7 @@ nav {
 }
 
 /* 6. These styles should apply to all links in the footer */
-footer {
+footer a {
   outline: 2px dashed red;
   color: inherit;
 }
@@ -108,7 +108,7 @@ footer {
 }
 
 /* 10. These styles should apply to the paragraph in the footer */
-footer {
+footer p {
   outline: 2px dashed red;
   color: #ffffff;
 }
