@@ -48,8 +48,9 @@ body {
   background:  #7fD9E2;
   color: #ffffff;
   height: 48px;
-  position: absolute;
+  position: fixed;
   width: 100%;
+  bottom: 0;
   
 
 }
@@ -83,8 +84,8 @@ body {
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 20px;
+  right: 20px;
 }
 
 /**
@@ -106,7 +107,7 @@ body {
   justify-content: center;
   z-index: 100;
   position: fixed;
-  bottom: 20px;
+  bottom: 80px;
   right: 20px;
 
 
