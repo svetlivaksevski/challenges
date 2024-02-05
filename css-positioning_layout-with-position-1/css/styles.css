@@ -102,4 +102,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 100;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+
 }
