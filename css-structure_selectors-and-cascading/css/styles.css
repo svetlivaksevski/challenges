@@ -69,7 +69,7 @@ a[target="_blank"] {
 }
 
 /* 4. These styles should apply to all links in the main navigation */
-nav {
+nav a {
   outline: 2px dashed red;
   color: #ffffff;
   text-decoration: none;
@@ -88,6 +88,7 @@ footer a {
 }
 
 /* 7. These styles should apply to all paragraphs and all lists (please use a class selector) */
+.text, 
 .list {
   outline: 2px dashed red;
   color: #2c3f3f;
@@ -108,13 +109,13 @@ footer a {
 }
 
 /* 10. These styles should apply to the paragraph in the footer */
-footer p {
+footer .text {
   outline: 2px dashed red;
   color: #ffffff;
 }
 
 /* 11. These styles should apply to all lists in the main content */
-.list {
+main .list {
   outline: 2px dashed red;
   padding: 1rem 2rem;
   background: #caced2;;
@@ -127,14 +128,14 @@ li {
 }
 
 /* 13. These styles should apply to all nested lists */
-.list ul.list {
+.list .list {
   outline: 2px dashed red;
   margin: 0.5rem 0 0 0;
   background-color: #f1f1f1;
 }
 
 /* 14. These styles should apply to all list items in nested lists */
-.list ul.list li {
+.list .list li {
   outline: 2px dashed red;
   margin: 0;
   color: #2673bb;
