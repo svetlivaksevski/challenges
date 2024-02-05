@@ -29,7 +29,7 @@ h2 {
 }
 
 strong {
-  color: #8236ff;
+  color: var(--color-primary);
 }
 
 section {
