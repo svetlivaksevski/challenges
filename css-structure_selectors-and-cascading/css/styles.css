@@ -57,7 +57,7 @@ nav {
 }
 
 /* 2. These styles should apply to all links */
-FIX_ME {
+a {
   outline: 2px dashed red;
   color: #ff00e6;
 }
