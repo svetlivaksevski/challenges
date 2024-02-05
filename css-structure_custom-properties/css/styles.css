@@ -57,7 +57,7 @@ figure {
   gap: 10px;
   margin: 0;
   padding: 10px;
-  background-color: #8236ffff;
+  background-color: var(--color-primary);
   border-radius: 4px;
 }
 
