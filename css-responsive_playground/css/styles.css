@@ -85,6 +85,10 @@ h1 {
 
   width: 100px;
   height: 100px;
+
+ @media (prefers-color-scheme: dark) {
+  background-color: var(--color-nemo);
+ } 
 }
 
 .box--five {
@@ -106,3 +110,11 @@ h1 {
     width: 400px;
   }
 }
+
+@media (orientation: landscape) {
+  .box--three { 
+  display: flex;
+  flex-direction: row;
+  }
+}
+
