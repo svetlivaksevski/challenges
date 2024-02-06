@@ -28,17 +28,28 @@ body {
   padding: 10px;
   background: var(--primary);
   color: var(--white);
+
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
 }
 
 .profile__image {
   border-radius: 50%;
   max-width: 50%;
   height: auto;
+  align-self: center;
 }
+
 
 .tech-stack__list {
   list-style: none;
   padding-left: 0;
+  gap: 10px;
+  Flex-wrap: wrap;
+  display: flex;
 }
 
 .tech-stack__list-item {
@@ -46,4 +57,6 @@ body {
   background-color: var(--primary-dark);
   color: var(--white);
   border-radius: 10px;
+
 }
+
