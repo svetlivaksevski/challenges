@@ -99,7 +99,7 @@ h1 {
   width: 100%;
 }
 
-@media (min-width: 599px) {
+@media (min-width: 600px) {
   .box--two {
     width: 200px;
   }
