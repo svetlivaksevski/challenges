@@ -254,9 +254,24 @@ width, etc. */
 /* --- */
 /* Replace this comment with your media query. */
 /* --- */
-@media (min-width: 900px){
 
+@media (min-width: 900px) {
+  .card-section {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .product-card {
+    width: 45%;
+  }
+
+  .intro-text {
+    width: 45%;
+  }
 }
+
 /* Media Query Desktop */
 /* --- */
 /* Replace this comment with your media query. */
@@ -264,18 +279,7 @@ width, etc. */
 
 @media (min-width: 1200px) {
   .--forest {
-    flex-grow: 1;
-    height: 70vh;
+    width: 100%;
 
-}
-.card-section {
-  flex-direction: row;
-  flex-wrap: wrap; 
-}
-.intro-text {
-  flex-grow: 1;
-}
-.--mountain {
-  flex-grow: 1;
-}
+  }
 }
