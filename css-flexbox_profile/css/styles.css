@@ -34,6 +34,7 @@ body {
   border-radius: 50%;
   max-width: 50%;
   height: auto;
+  justify-content: center;
 }
 
 .tech-stack__list {
@@ -46,4 +47,11 @@ body {
   background-color: var(--primary-dark);
   color: var(--white);
   border-radius: 10px;
+  Flex-wrap: wrap;
+  display: inline
+
+}
+
+.profile {
+  display: flex;
 }
