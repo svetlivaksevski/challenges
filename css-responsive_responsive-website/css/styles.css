@@ -277,7 +277,7 @@ width, etc. */
 /* Replace this comment with your media query. */
 /* --- */
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .--forest {
     width: 100%;
 
