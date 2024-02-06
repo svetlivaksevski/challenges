@@ -137,6 +137,7 @@ fairly essential to completing this challenge. */
   margin-top: var(--main-content-margin-top);
   padding: var(--gap) 0 var(--gap) 0;
   background: var(--navy-blue);
+  
 }
 
 .intro-text {
@@ -144,6 +145,7 @@ fairly essential to completing this challenge. */
   font-size: var(--regular-text);
   line-height: var(--regular-text-line-height);
   width: 70%;
+  
 }
 
 .card-section {
@@ -152,6 +154,7 @@ fairly essential to completing this challenge. */
   align-items: center;
   gap: var(--gap);
   flex-direction: column;
+
 }
 
 /* Product Card + Backgrounds */
@@ -169,11 +172,14 @@ fairly essential to completing this challenge. */
 .--forest {
   background-image: url("../img/forest.jpg");
   background-size: cover;
+  
+
 }
 
 .--mountain {
   background-image: url("../img/mountain.jpg");
   background-size: cover;
+  
 }
 
 .--river {
@@ -184,11 +190,13 @@ fairly essential to completing this challenge. */
 .--ocean {
   background-image: url("../img/ocean.jpg");
   background-size: cover;
+  
 }
 
 .--desert {
   background-image: url("../img/desert.jpg");
   background-size: cover;
+  
 }
 
 .card-title {
@@ -247,7 +255,31 @@ width, etc. */
 /* Replace this comment with your media query. */
 /* --- */
 
+@media (min-width: 900px) {
+  .card-section {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .product-card {
+    width: 45%;
+  }
+
+  .intro-text {
+    width: 45%;
+  }
+}
+
 /* Media Query Desktop */
 /* --- */
 /* Replace this comment with your media query. */
 /* --- */
+
+@media (min-width: 1000px) {
+  .--forest {
+    width: 100%;
+
+  }
+}
