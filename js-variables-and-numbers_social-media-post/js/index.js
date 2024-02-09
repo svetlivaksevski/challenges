@@ -10,13 +10,23 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+const title = "My first title";
+const text = "My new text";
 // --^-- write your code here --^--
+let numberOfLikes = 3;
+const postOwner = "Ivan";
+const isReported = true; 
 
-/*
-2. Log all variables to the console. Increase the likes by one and log the amount of likes again. Adapt your code from 1.1 if necessary.
+/* 2. Log all variables to the console. Increase the likes by one and log the amount of likes again. Adapt your code from 1.1 if necessary.
 */
 
+numberOfLikes++; 
+
+console.log("Title:", title);
+console.log("Text:", text);
+console.log("Number of likes:", numberOfLikes);
+console.log("The user who created the post:", postOwner);
+console.log("isReported:", isReported);
 // --v-- write your code here --v--
 
 // --^-- write your code here --^--
