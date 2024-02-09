@@ -43,6 +43,9 @@ body {
   min-height: 100vh;
 
   /* Add styles to the grid container */
+  display: grid;
+  grid-template-areas: 
+  "1fr 1fr";
 }
 
 .teaser-grid__teaser {
