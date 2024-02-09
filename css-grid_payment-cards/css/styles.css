@@ -43,6 +43,10 @@ body {
   max-width: 50rem;
 
   /* Add styles to the container */
+  display: grid;
+  grid-template-areas: 
+  "1fr 1fr 1fr";
+  gap: 2rem;
 }
 
 .cards__option {
