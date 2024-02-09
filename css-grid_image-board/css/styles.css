@@ -21,8 +21,7 @@ body {
   gap: 1rem;
   padding: 1rem;
   /* Add styles here */
-  grid-template-areas: 
-  "lt ct rt"
+  grid-template-areas: "lt ct rt"
   "lb ct rb"
   "lb cb rb";
 }

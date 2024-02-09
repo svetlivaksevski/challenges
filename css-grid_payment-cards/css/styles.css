@@ -44,8 +44,7 @@ body {
 
   /* Add styles to the container */
   display: grid;
-  grid-template-areas: 
-  "1fr 1fr 1fr";
+  grid-template-areas:  "1fr 1fr 1fr";
   gap: 2rem;
 }
 
