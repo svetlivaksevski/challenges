@@ -1,7 +1,16 @@
 console.clear();
 
 // The exercise starts here!
+const coding = "Happy coding!";
+console.log(coding);
 
+const hacking = "Happy hacking!";
+console.log(hacking);
+
+console.clear();
+
+const error = "This is an error!";
+console.error(error);
 // All console methods can be found on mdn for reference: https://developer.mozilla.org/en-US/docs/Web/API/console
 
 // 1. Store the sentence 'Happy coding!' in a variable named 'coding'.
