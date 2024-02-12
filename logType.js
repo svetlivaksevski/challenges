@@ -3,9 +3,6 @@ switch(typeof data) {
 case 'undefined':
 	console.log("This is a undefined!");
 	break;
-case 'null':
-	console.log("This is null!");
-	break;
 case 'number':
 	console.log(isNaN(data) ? "This is not a number!" : "This is a number!");
 	break;
