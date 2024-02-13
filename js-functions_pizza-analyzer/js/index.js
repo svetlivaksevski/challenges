@@ -8,12 +8,11 @@ const outputSection = document.querySelector('[data-js="output-section"]');
 
 const output = document.querySelector('[data-js="output"]');
 
-let pizzaSize1 = 24;
-let pizzaSize2 = 24;
 
 pizzaInput1.addEventListener("input", () => {
   // write your code here
- pizzaSize1 = pizzaInput1.value;
+ let = pizzaSize1 = pizzaInput1.value;
+ let = pizzaSize2 = pizzaInput2.value;
  calculatePizzaGain(pizzaSize1, pizzaSize2);
  updatePizzaDisplay(pizza1, pizzaSize1);
  updateOutputColor(pizzaSize1, pizzaSize2);
@@ -21,7 +20,8 @@ pizzaInput1.addEventListener("input", () => {
 
 pizzaInput2.addEventListener("input", () => {
   // write your code here
-  pizzaSize2 = pizzaInput2.value;
+ let = pizzaSize1 = pizzaInput1.value;
+ let = pizzaSize2 = pizzaInput2.value
   calculatePizzaGain(pizzaSize1, pizzaSize2);
   updatePizzaDisplay(pizza2, pizzaSize2);
   updateOutputColor(pizzaSize1, pizzaSize2);
@@ -35,17 +35,15 @@ let area2 = Math.PI * (diameter2/2) **2;
 
 let procentRelative = (area2 - area1)/area1 * 100;
 
-let textContent = Math.round(procentRelative);
-
-output.innerHTML = textContent;
+output.textContent = Math.round(procentRelative);
 
 }
 // Task 2
 // define the function updatePizzaDisplay here
 function updatePizzaDisplay (pizzaElement, newSize) {
-let newDisplaySize = (newSize/24) * 100;
 
-pizzaElement.style.width = newDisplaySize + "px";
+pizzaElement.style.width = newSize / 24 * 100 + 'px';
+
 } 
 // Task 3
 // define the function updateOutputColor here
