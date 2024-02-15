@@ -14,3 +14,15 @@ Implement the following functionality:
 const firstInput = document.querySelector("[data-js=first-input]");
 const secondInput = document.querySelector("[data-js=second-input]");
 const button = document.querySelector("[data-js=button]");
+
+button.addEventListener("click", () => {
+// First Commit secondInput.value += firstInput.value;
+// Second Commit secondInput.value += firstInput.value.toUpperCase();
+
+// Third Commit
+const firstClick = firstInput.value;
+
+firstInput.value = secondInput.value;
+secondInput.value = firstClick;
+
+})
