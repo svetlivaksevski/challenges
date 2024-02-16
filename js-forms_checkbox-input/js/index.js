@@ -38,8 +38,6 @@ form.addEventListener("submit", (event) => {
   }
   // --^-- write your code here --^--
 
-  // eslint-disable-next-line no-alert
-  // alert("Form submitted");
 });
 
 
