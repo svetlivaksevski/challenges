@@ -24,21 +24,17 @@ const rotationInput = document.querySelector('[data-js="input-rotation"]');
 const box = document.querySelector('[data-js="box"]');
 
 colorInput.addEventListener("input",(e) => {
-
 box.style.background = `hsl(${e.target.value}, 70%, 60%)`;
 
 })
 
 radiusInput.addEventListener("input",(e) => {
-
 box.style.borderRadius = e.target.value + "%";
 
 })
 
 rotationInput.addEventListener("input",(e) => {
-
-	box.style.transform = `rotate(${e.target.value}deg)`;
-
-	console.log("transform", box.style.transform);
+box.style.transform = `rotate(${e.target.value}deg)`;
+console.log("transform", box.style.transform);
 	
 })
