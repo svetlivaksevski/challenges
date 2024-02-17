@@ -10,8 +10,6 @@ const price = "149,99 €";
 const imageSrc =
   "https://unsplash.com/photos/3VOTHTrE614/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjU5NTM3NTA2&force=true&w=640";
 
-
-const body = document.querySelector("body")
 const secondProduct = document.createElement("article");
 
 secondProduct.innerHTML =`<article class="product">
@@ -43,9 +41,8 @@ secondProduct.innerHTML =`<article class="product">
 
 document.body.append(secondProduct);
 
-// add button that works with console 
-
 const buyButton = document.querySelector('[data-js="second-button"]');
-buyButton.addEventListener('click', () => {
+buyButton.addEventListener('click', () => 
+{
   console.log(`Name of the product: ${name} and price of the product: ${price}`);
 })
