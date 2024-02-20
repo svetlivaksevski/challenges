@@ -9,6 +9,7 @@ body {
   display: grid;
   place-items: center;
   background-color: #e4e8f0;
+
 }
 
 /* Start Button */
@@ -21,13 +22,17 @@ body {
   border: none;
   font-size: 1.5rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: background-color 3s ease-in-out, box-show 3s ease-in-out;
 }
+
 
 .start-button:hover {
   background-color: #f5521c;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: background-color 1s cubic-bezier(0.04, 0.66, 1, 0.47),
+    color 2s linear, box-shadow 1s ease-in-out 1s;
 }
 
 .start-button:disabled {
@@ -49,12 +54,13 @@ body {
   background: rgb(71, 212, 94);
   border-radius: 7px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-
+ 
   transition: transform 0.5s;
 }
 
 .toast--hidden {
-  transform: translate3d(-150%, 0, 0);
+  transform: rotate(180deg) translateX(120%);
+
 }
 
 /* Countdown */
@@ -76,3 +82,4 @@ body {
   width: 0%;
   transition: width linear 2000ms;
 }
+
