@@ -17,4 +17,7 @@ function showErrorMessage (errorMessage) {
 console.log(`Login error:" ${errorMessage}`);
 }
 
-handleUserLogin(showWelcomeMessage, showErrorMessage);
+handleUserLogin(showWelcomeMessage, showErrorMessage, "Jane Doe");
+
+handleUserLogin(showWelcomeMessage, showErrorMessage, "John Doe");
+
