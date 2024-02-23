@@ -9,16 +9,16 @@ import {countdown} from "./core/countdown.js";
 import {liftoff} from "./core/liftoff.js";
 import {deployPayload} from "./core/deploy.js";
 
-export default function launchSequenceFunction () {
-    loadPayload (FISHSAT);
+export default function launchSequenceFunction() {
+    loadPayload(FISHSAT);
     loadPayload(NFSAT);
-    getRocket (rocket);
-    fuel ();
-    countdown ();
-    countdown ();
-    countdown ();
-    countdown ();
-    countdown ();
-    liftoff ();
-    deployPayload ()
+    getRocket(rocket);
+    fuel();
+    countdown();
+    countdown();
+    countdown();
+    countdown();
+    countdown();
+    liftoff();
+    deployPayload()
 };
