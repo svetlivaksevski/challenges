@@ -22,18 +22,18 @@ const animalStrings = [
 ];
 
 const hippoExists = animalStrings.includes("hippo");
-console.log(hippoExists)
+  console.log(hippoExists)
 
 // Hint: You can pass the starting index as second parameter.
 const catStartingFromIndexFiveExists = animalStrings.includes(("cat", 5));
-console.log(catStartingFromIndexFiveExists)
+  console.log(catStartingFromIndexFiveExists)
 
 // Hint: Besides the array method, check out the string method `startsWith()`.
 const firstAnimalStartingWithLetterP = animalStrings.find((animal) => animal.startsWith("p"));
-console.log(firstAnimalStartingWithLetterP)
+  console.log(firstAnimalStartingWithLetterP)
 
 const indexOfGiraffe = animalStrings.indexOf(("giraffe"));
-console.log(indexOfGiraffe);
+  console.log(indexOfGiraffe);
 // Note:
 // - Sorting strings is slightly more complicated than sorting numbers.
 // - You will need if-statements and return values of -1, 1, and 0.
@@ -43,20 +43,20 @@ console.log(indexOfGiraffe);
 // Hint: sort() mutates the original array, which is bad.
 // -> Use animals.slice().sort(...) to make a copy.
 const animalsSortedAlphabetically = animalStrings.slice().sort() ;
-console.log(animalsSortedAlphabetically);
+  console.log(animalsSortedAlphabetically);
 // Hint: Guess what? There is a string method called `endsWith()`.
 const anyAnimalEndsWithLetterZ = animalStrings.some(animal => animal.endsWith("z"));
-console.log(anyAnimalEndsWithLetterZ);
+  console.log(anyAnimalEndsWithLetterZ);
 
 const everyAnimalHasMoreThanTwoLetters = animalStrings.every((animal) => animal.length > 2);
-console.log(everyAnimalHasMoreThanTwoLetters);
+  console.log(everyAnimalHasMoreThanTwoLetters);
 
 // Hint: There are several ways to go here. Let's focus on two options:
 // Option 1: Concatenate all characters with `reduce()` and check for the `length` property of the result.
 // Option 2: Use `map()` to create an array with the length values of all strings,
 // 				then sum them up with `reduce()` (keyword: method chaining)
 const sumOfAllAnimalCharacters = animalStrings.reduce((a,b) => a + b).length;
-console.log("result: ",sumOfAllAnimalCharacters);
+  console.log("result: ",sumOfAllAnimalCharacters);
 
 export {
   hippoExists,
