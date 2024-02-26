@@ -23,14 +23,15 @@ root.append(machine, spinButton, result);
 //                                      ↙️
 spinButton.addEventListener("click", async () => {
   spinButton.disabled = true;
-  result.setSpinning()
   
-  Promise.all([
+try {
+  result.setSpinning()
+  const results = await Promise.all([
     wheel1.spin(), 
     wheel2.spin(),
     wheel3.spin()
   ])
-  .then((results) => {
+
     const counter = getMaxCount(results);
     let newPoints = 0;
     if (counter === 3) { 
@@ -39,10 +40,9 @@ spinButton.addEventListener("click", async () => {
       newPoints = 10;
     } 
     result.setResult(newPoints);
-  })
-  .catch (() => {
+  } catch (error) {
     result.setMachineChoked();
-  });
+  } finally {
 
   /**
    * Hint 1:
@@ -86,7 +86,7 @@ spinButton.addEventListener("click", async () => {
    */
 
   spinButton.disabled = false;
-
+  }
 });
 
 /**
