@@ -10,7 +10,7 @@ queryInput.addEventListener("input", (event) => {
   const searchString = event.target.value;
 
 // First part 
-// const foundCountry = countries.find((country) => country.name.toLowerCase().startsWith(searchString));
+// const foundCountry = countries.find((country) => country.name.toLowerCase().startsWith(searchString.toLowerCase()));
 
 //First part
 //   if (foundCountry) {
@@ -20,7 +20,7 @@ queryInput.addEventListener("input", (event) => {
 // });
 
 // Second part
-const foundCountries = countries.filter((country) => country.name.toLowerCase().startsWith(searchString));
+const foundCountries = countries.filter((country) => country.name.toLowerCase().startsWith(searchString.toLowerCase()));
 
 // Second part
 
