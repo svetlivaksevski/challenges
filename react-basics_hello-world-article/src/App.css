@@ -22,7 +22,6 @@
 body {
   margin: 0;
   font-family: system-ui;
-
 }
 
 article {
@@ -37,9 +36,9 @@ article {
 }
 
 h1 {
-  color: var(--primary);
+  color: var(--white);
 }
 
 p {
-  color: var(--black);
+  color: var(--white);
 }
