@@ -1,5 +1,10 @@
 import "./App.css";
 
 export default function App() {
-  return <h1>Replace me with your component!</h1>;
+  return <Greeting name="Sven" />;
+}
+
+function Greeting({ name }) {
+  const coaches = ["Gimena", "Jan", "Sven", "Marcell", "Klaus"];
+  return <p>Hello, {coaches.includes(name) ? "Coach! " : name}</p>;
 }
