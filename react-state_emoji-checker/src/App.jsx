@@ -3,9 +3,12 @@ import { useState } from "react";
 
 export default function App() {
   const [code, setCode] = useState("");
-  // let code = "?";
 
   const validCode = "🐡🐠🐋";
+
+  function handleClick(emoji) {
+    setCode((prev) => prev + emoji);
+  }
 
   return (
     <div className="container">
@@ -13,7 +16,7 @@ export default function App() {
         <button
           type="button"
           onClick={() => {
-            setCode(code + "🐡");
+            handleClick("🐡");
           }}
         >
           <span role="img" aria-label="Pufferfish">
@@ -23,7 +26,7 @@ export default function App() {
         <button
           type="button"
           onClick={() => {
-            setCode(code + "🐋");
+            handleClick("🐋");
           }}
         >
           <span role="img" aria-label="Whale">
@@ -33,7 +36,7 @@ export default function App() {
         <button
           type="button"
           onClick={() => {
-            setCode(code + "🐠");
+            handleClick("🐠");
           }}
         >
           <span role="img" aria-label="Clownfish">
