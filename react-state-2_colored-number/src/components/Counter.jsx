@@ -9,7 +9,7 @@ export default function Counter() {
   }
 
   function handleDecrement() {
-    setCounter(counter - 1);
+    setCounter(Math.max(counter - 1, 0));
   }
   return (
     <div className="counter">
