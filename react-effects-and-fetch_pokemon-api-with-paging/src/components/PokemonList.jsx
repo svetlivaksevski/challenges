@@ -9,7 +9,7 @@ export default function PokemonList() {
     async function loadPokemon() {
       try {
         const response = await fetch(
-          `https://pokeapi.co/api/v2/pokemon?offset=${page}`
+          `https://pokeapi.co/api/v2/pokemon?offset=${page}&limit=20`
         );
         const data = await response.json();
         setPokemon(data.results);
@@ -26,7 +26,7 @@ export default function PokemonList() {
       <button
         type="button"
         className="button"
-        onClick={() => setPage((prevState) => prevState - 1)}
+        onClick={() => setPage((prevState) => prevState - 20)}
         disabled={page === 1}
       >
         Previous Page
@@ -34,7 +34,7 @@ export default function PokemonList() {
       <button
         type="button"
         className="button"
-        onClick={() => setPage((prevState) => prevState + 1)}
+        onClick={() => setPage((prevState) => prevState + 20)}
       >
         Next Page
       </button>
