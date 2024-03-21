@@ -31,8 +31,6 @@ export default function App({ Component, pageProps }) {
   const lightsOff = () =>
     setLights(lights.map((lightOff) => ({ ...lightOff, isOn: false })));
 
-  const isDimmed = lightsOff === 0;
-
   return (
     <Layout>
       <GlobalStyle />
