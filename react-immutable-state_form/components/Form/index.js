@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { StyledForm, StyledInputContainer } from "./Form.styled";
-import { useImmer } from "use-immer";
+// import { useImmer } from "use-immer";
 
 export default function Form() {
-  const [mountain, updateMountain] = useImmer({
+  const [mountain, updateMountain] = useState({
     name: "Mount Everest",
     values: {
       altitude: 8848,
@@ -12,21 +12,49 @@ export default function Form() {
   });
 
   function handleNameChange(event) {
-    updateMountain((draft) => {
-      draft.name = event.target.value;
+    // First way
+    updateMountain((prevMountain) => {
+      const updateMountain = { ...prevMountain };
+      updateMountain.name = event.target.value;
+
+      return updateMountain;
     });
+    // Second way with immer
+    // updateMountain((draft) => {
+    //   draft.name = event.target.value;
+    // });
   }
 
   function handleAltitudeChange(event) {
-    updateMountain((draft) => {
-      draft.values.altitude = event.target.value;
+    // First way
+    updateMountain((prevMountain) => {
+      const updateMountain = { ...prevMountain };
+      const updatedValues = { ...prevMountain.values };
+      updatedValues.altitude = event.target.value;
+
+      updateMountain.values = updatedValues;
+      return updateMountain;
     });
+    // Second way with immer
+    // updateMountain((draft) => {
+    //   draft.values.altitude = event.target.value;
+    // });
   }
 
   function handleMountainRangeChange(event) {
-    updateMountain((draft) => {
-      draft.values.mountainRange = event.target.value;
+    // First way
+    updateMountain((prevMountain) => {
+      const updateMountain = { ...prevMountain };
+      const updatedValues = { ...prevMountain.values };
+      updatedValues.mountainRange = event.target.value;
+
+      updateMountain.values = updatedValues;
+      return updateMountain;
     });
+    // Second way with immer
+    // updateMountain((draft) => {
+    //   draft.values.mountainRange = event.target.value;
+    // });
   }
 
   return (
