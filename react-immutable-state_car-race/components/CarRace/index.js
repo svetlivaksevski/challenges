@@ -1,4 +1,5 @@
 import { Fragment, useState } from "react";
+// import { useImmer } from "use-immer";
 import Winner from "../Winner";
 import {
   CarButton,
@@ -18,6 +19,29 @@ export default function CarRace() {
     const coveredDistance = getRandomDistance();
     console.log("clickedCar", clickedCar);
     console.log("coveredDistance", coveredDistance);
+    // First solution with Spread Syntax
+    setCars((current) => {
+      return current.map((car) => {
+        if (car.emoji === clickedCar.emoji) {
+          return {
+            ...car,
+            position: {
+              ...car.position,
+              lastDistance: coveredDistance,
+              x: car.position.x + coveredDistance,
+            },
+          };
+        }
+        return car;
+      });
+    });
+    //Second solution with `immer`
+    // updateCars((draft) => {
+    //   const pickedCard = draft.find((car) => car.emoji === clickedCar.emoji);
+    //   pickedCard.position.x += coveredDistance;
+    //   pickedCard.position.lastDistance = coveredDistance;
+    // });
+    // const coveredDistance = getRandomDistance();
   }
 
   const winner = cars.find((car) => car.position.x >= finishLine);
